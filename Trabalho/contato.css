@@ -1,0 +1,218 @@
+/* Estilização global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+}
+  
+/* Container principal */
+.container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+  
+/* Menu lateral */
+.sidebar {
+    width: 250px;
+    position: fixed;
+    height: 100%;
+    top: 50%;
+    left: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(-50%);
+}
+  
+/* Logo */
+.sidebar .logo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 150px;
+}
+  
+.sidebar .logo img {
+    width: 150px;
+}
+  
+/* Menu */
+.sidebar .menu {
+    list-style: none;
+    padding-left: 0;
+    width: 100%;
+}
+  
+.sidebar .menu li {
+    margin-bottom: 15px;
+    text-align: center;
+}
+  
+.sidebar .menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    display: block;
+}
+  
+.sidebar .menu li a.active {
+    color: #00ff90;
+}
+  
+/* Conteúdo principal */
+.content {
+    flex: 1;
+    background-image: url(./imagens/Imagem\ do\ WhatsApp\ de\ 2024-11-27\ à\(s\)\ 22.28.46_5f035a17.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+  
+/* Seção de informações do perfil */
+.profile-info {
+    padding: 10px;
+    border-radius: 10px;
+    width: 600px; /* Aumentei a largura para evitar quebras de linha */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+  
+/* Saudação */
+.greeting {
+    padding: 15px;
+    border-radius: 8px;
+    color: rgb(11, 53, 112);
+    font-size: 16px; /* Tamanho de fonte maior */
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap; /* Garante que o texto não quebre */
+}
+  
+/* Foto de perfil */
+.profile-photo {
+    padding: 2px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+  
+.profile-photo .profile-pic {
+    width: 330px; /* Ajustei o tamanho para centralizar visualmente */
+    height: 260px;
+    border-radius: 40%; /* Deixei a imagem redonda */
+}
+  
+.profile-photo .change-photo {
+    color: #00ff90;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+}
+  
+/* Informações do usuário */
+.user-details {
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    color: #ffffff;
+}
+  
+.user-details p {
+    margin: 10px 0;
+    font-size: 18px;
+    white-space: nowrap; /* Evita quebras de linha */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Indica com "..." quando o texto for muito longo */
+}
+
+/* Centraliza título, imagem e texto */
+.profile-info {
+    align-items: center;
+    justify-content: center;
+}
+
+
+.button button {
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #002575;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button button:hover {
+    background-color: #00cc73;
+    transform: scale(1.05);
+}
+
+.button button:active {
+    background-color: #009a5a;
+    transform: scale(0.95);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f3f3f3;
+}
+form {
+    background: rgba(255, 255, 255, 0);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    color: #ffffff;
+    text-align: start;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin: 0px 0 0px;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    font-size: 1em;
+}
+button {
+    width: 60%;
+    background-color: #00244a;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #000053;
+}

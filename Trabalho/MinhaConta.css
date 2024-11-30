@@ -1,0 +1,173 @@
+/* Estilização global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+  }
+  
+  /* Container principal */
+  .container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+  }
+  
+  /* Menu lateral */
+  .sidebar {
+    width: 250px;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 20px;
+  }
+
+ /* Menu lateral */
+.sidebar {
+    width: 250px;
+    position: fixed;
+    height: 100%;
+    top: 50%; /* Posiciona o menu a partir do centro da tela */
+    left: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os itens dentro da sidebar */
+    transform: translateY(-50%); /* Ajusta para que o menu fique centrado verticalmente */
+  }
+  
+  /* Logo */
+  .sidebar .logo {
+    width: 100%;
+    text-align: center; /* Centraliza a logo dentro da sidebar */
+    margin-bottom: 150px; /* Espaçamento abaixo da logo */
+  }
+  
+  .sidebar .logo img {
+    width: 150px; /* Mantém o tamanho da logo */
+  }
+  
+  /* Menu */
+  .sidebar .menu {
+    list-style: none;
+    padding-left: 0;
+    width: 100%;
+  }
+  
+  .sidebar .menu li {
+    margin-bottom: 15px;
+    text-align: center; /* Centraliza os itens do menu */
+  }
+  
+  .sidebar .menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    display: block; /* Faz o link ocupar toda a largura do item */
+  }
+  
+  .sidebar .menu li a.active {
+    color: #00ff90;
+  }
+  
+  
+  
+  .sidebar .logo img {
+    width: 150px;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar .menu {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .sidebar .menu li {
+    margin-bottom: 15px;
+  }
+  
+  .sidebar .menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+  }
+  
+  .sidebar .menu li a.active {
+    color: #00ff90;
+  }
+  
+  /* Conteúdo principal */
+  .content {
+     /* Espaço para o menu lateral */
+    flex: 1;
+    background-image: url(./imagens/Imagem\ do\ WhatsApp\ de\ 2024-11-27\ à\(s\)\ 22.28.46_5f035a17.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    height: 100%;
+  }
+  
+  /* Seção de informações do perfil */
+  .profile-info {
+    padding: 30px;
+    border-radius: 10px;
+    width: 450px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Aumentei o gap para maior espaçamento */
+  }
+  
+  /* Saudação */
+  .greeting {
+    padding: 15px;
+    border-radius: 8px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  /* Foto de perfil */
+  .profile-photo {
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .profile-photo .profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: white;
+    border: 3px solid #00ff90;
+  }
+  
+  .profile-photo .change-photo {
+    color: #00ff90;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+  }
+  
+  /* Informações do usuário */
+  .user-details {
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+    color: white;
+  }
+  
+  .user-details p {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+  

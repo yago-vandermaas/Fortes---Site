@@ -1,0 +1,195 @@
+/* Estilização global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+}
+  
+/* Container principal */
+.container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+  
+/* Menu lateral */
+.sidebar {
+    width: 250px;
+    position: fixed;
+    height: 100%;
+    top: 50%;
+    left: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(-50%);
+}
+  
+/* Logo */
+.sidebar .logo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 150px;
+}
+  
+.sidebar .logo img {
+    width: 150px;
+}
+  
+/* Menu */
+.sidebar .menu {
+    list-style: none;
+    padding-left: 0;
+    width: 100%;
+}
+  
+.sidebar .menu li {
+    margin-bottom: 15px;
+    text-align: center;
+}
+  
+.sidebar .menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    display: block;
+}
+  
+.sidebar .menu li a.active {
+    color: #00ff90;
+}
+  
+/* Conteúdo principal */
+.content {
+    flex: 1;
+    background-image: url(./imagens/Imagem\ do\ WhatsApp\ de\ 2024-11-27\ à\(s\)\ 22.28.46_5f035a17.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+  
+/* Seção de informações do perfil */
+.profile-info {
+    padding: 10px;
+    border-radius: 10px;
+    width: 600px; /* Aumentei a largura para evitar quebras de linha */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+  
+/* Saudação */
+.greeting {
+    padding: 15px;
+    border-radius: 8px;
+    color: rgb(11, 53, 112);
+    font-size: 16px; /* Tamanho de fonte maior */
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap; /* Garante que o texto não quebre */
+}
+  
+/* Foto de perfil */
+.profile-photo {
+    padding: 2px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+  
+.imgperfis img {
+    max-width: 55%; /* Garante que a imagem não ultrapasse o tamanho do contêiner */
+    max-height: 115px; /* Define a altura máxima da imagem */
+    width: auto; /* Mantém a proporção da largura */
+    height: auto; /* Mantém a proporção da altura */
+    display: block; /* Remove espaços extras ao redor da imagem */
+    margin: 0 auto; /* Centraliza a imagem dentro do contêiner */
+}
+
+  
+/* Informações do usuário */
+.user-details {
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    color: #ffffff;
+}
+  
+.user-details p {
+    margin: 10px 0;
+    font-size: 18px;
+    white-space: nowrap; /* Evita quebras de linha */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Indica com "..." quando o texto for muito longo */
+}
+
+/* Centraliza título, imagem e texto */
+.profile-info {
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    gap: 40px; /* Espaçamento maior entre as caixas */
+}
+
+.box {
+    width: 180px; /* Largura da caixa */
+    background-color: #002852; /* Cor de fundo da caixa */
+    border-radius: 10px; /* Borda arredondada */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombreamento suave */
+    text-align: center;
+    padding: 15px;
+    color: white; /* Cor do texto */
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Borda arredondada para a imagem */
+    background-color: #e0e0e0; /* Cor de fundo de placeholder para imagem */
+}
+
+.box p {
+    margin-top: 10px; /* Espaçamento entre imagem e texto */
+    font-weight: bold;
+    color: white; /* Cor do texto */
+    font-size: 0,5em;
+}
+
+.arrow {
+    position: absolute;
+    top: 68%;
+    right: 20%; /* Ajusta a seta à direita do contêiner */
+    font-size: 2em; /* Tamanho da seta */
+    color: #003064; /* Cor da seta */
+    cursor: pointer; /* Mostra que é clicável */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Deixa a seta circular */
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.arrow:hover {
+    background-color: #003a77; /* Fundo azul ao passar o mouse */
+    color: white; /* Cor da seta ao passar o mouse */
+    transform: scale(1.1); /* Aumenta levemente a seta */
+}

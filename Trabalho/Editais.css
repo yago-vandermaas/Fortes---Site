@@ -1,0 +1,201 @@
+/* Estilização global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+}
+  
+/* Container principal */
+.container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+  
+/* Menu lateral */
+.sidebar {
+    width: 250px;
+    position: fixed;
+    height: 100%;
+    top: 50%;
+    left: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(-50%);
+}
+  
+/* Logo */
+.sidebar .logo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 150px;
+}
+  
+.sidebar .logo img {
+    width: 150px;
+}
+  
+/* Menu */
+.sidebar .menu {
+    list-style: none;
+    padding-left: 0;
+    width: 100%;
+}
+  
+.sidebar .menu li {
+    margin-bottom: 15px;
+    text-align: center;
+}
+  
+.sidebar .menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    display: block;
+}
+  
+.sidebar .menu li a.active {
+    color: #00ff90;
+}
+  
+/* Conteúdo principal */
+.contenti {
+    flex: 1;
+    background-image: url(./imagens/Imagem\ do\ WhatsApp\ de\ 2024-11-27\ à\(s\)\ 22.28.46_5f035a17.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+  
+/* Seção de informações do perfil */
+.profile-info {
+    padding: 10px;
+    border-radius: 10px;
+    width: 600px; /* Aumentei a largura para evitar quebras de linha */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+  
+/* Saudação */
+.greeting {
+    padding: 15px;
+    border-radius: 8px;
+    color: rgb(11, 53, 112);
+    font-size: 16px; /* Tamanho de fonte maior */
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap; /* Garante que o texto não quebre */
+}
+  
+/* Foto de perfil */
+.profile-photo {
+    padding: 2px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+  
+.imgperfis img {
+    max-width: 55%; /* Garante que a imagem não ultrapasse o tamanho do contêiner */
+    max-height: 115px; /* Define a altura máxima da imagem */
+    width: auto; /* Mantém a proporção da largura */
+    height: auto; /* Mantém a proporção da altura */
+    display: block; /* Remove espaços extras ao redor da imagem */
+    margin: 0 auto; /* Centraliza a imagem dentro do contêiner */
+}
+
+  
+/* Informações do usuário */
+.user-details {
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    color: #ffffff;
+}
+  
+.user-details p {
+    margin: 10px 0;
+    font-size: 18px;
+    white-space: nowrap; /* Evita quebras de linha */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Indica com "..." quando o texto for muito longo */
+}
+
+/* Centraliza título, imagem e texto */
+.profile-info {
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%; /* Limita a largura do conteúdo */
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    width: 320px;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    font-size: 14px;
+}
+
+.search-bar i {
+    margin-left: -30px; /* Ajusta posição da lupa */
+    font-size: 16px;
+    color: rgb(82, 82, 82);
+}
+
+.option {
+    background-color: rgba(255, 255, 255, 0); /* Fundo branco para cada opção */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.option img {
+    width: 150%;
+    max-width: 150px; /* Tamanho máximo da imagem */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.option h3 {
+    font-size: 16px; /* Tamanho do título */
+    margin: 5px 0;
+    color: #ffffff;
+}
+
+.option p {
+    font-size: 12px; /* Tamanho da descrição */
+    color: #ffffff;
+}
